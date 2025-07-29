@@ -36,7 +36,7 @@ If you don't require complex queue/addressing management (like MQTT or RabbitMQ)
 - In-memory jobs that run directly without waiting for persistence (if an opportunity exists)
 - For databases: Low transaction cost / minimal blocking operations
 
-## Features
+## Features (within information)
 
 - Direct start/stop
 - Job pool management with non-terminating tasks, job pool prioritization
@@ -46,30 +46,3 @@ If you don't require complex queue/addressing management (like MQTT or RabbitMQ)
 - ...
 - ...
 - ...
-
-## Architecture
-
-Jobman is designed around the concepts of ThreadPool (named WorkPool), allowing for efficient job management and execution.
-
-Each WorkPool have multiple threads and can be configured with different priorities and storages.
-
-![Architecture](/img/Architecture.png)
-
-
-## Links
-
-- [How to Use](/HowToUse.md)
-- [Contribution](/Contribution.md)
-- [License](/license.md)
-
-
-
-## Other Alternatives / Related Infrastructures
-
-- [Hangfire](https://www.hangfire.io/)
-- [Quartz .Net](https://www.quartz-scheduler.net/)
-- [RabbitMQ](https://www.rabbitmq.com/)
-- [Delayed Job](https://github.com/collectiveidea/delayed_job)
-- [Celery](https://docs.celeryproject.org/en/stable/)
-- [Sidekiq](https://sidekiq.org/)
-- [Resque](https://github.com/resque/resque)

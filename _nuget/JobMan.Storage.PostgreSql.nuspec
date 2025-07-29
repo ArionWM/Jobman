@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>JobMan.Storage.PostgreSql</id>
+		<version>0.1.0</version>
+		<title>JobMan PostgreSql Connection</title>
+		<authors>ArionWm (Türkay Kaynak)</authors>
+		<owners>ArionWm (Türkay Kaynak)</owners>
+		<description>
+			Jobman is "high performance", scalable, persistable, embedded producer-consumer (background processing) job server for .NET.
+		</description>
+		<releaseNotes>
+			This is early (debug) release. But working in some applications and many customers ...
+		</releaseNotes>
+		<copyright>Copyright 2025 ArionWm</copyright>
+		<tags>Job Server Background Processing Recurring Jobs Thread Pool</tags>
+		<dependencies>
+
+			<group targetFramework="netstandard2.1">
+				<dependency id="JobMan" version="0.3.3" />
+				<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="7.0.0" />
+				<dependency id="Microsoft.Extensions.Logging" version="7.0.0" />
+				<dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.0" />
+				<dependency id="NCrontab" version="3.3.3" />
+				<dependency id="System.Collections.Immutable" version="7.0.0" />
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="../JobMan.Storage.PostgreSql/bin/Debug/netstandard2.1/JobMan.Storage.PostgreSql.dll" target="lib\netstandard2.1\JobMan.Storage.PostgreSql.dll" />
+		<file src="../JobMan.Storage.PostgreSql/bin/Debug/netstandard2.1/JobMan.Storage.PostgreSql.pdb" target="lib\netstandard2.1\JobMan.Storage.PostgreSql.pdb" />
+	</files>
+</package>

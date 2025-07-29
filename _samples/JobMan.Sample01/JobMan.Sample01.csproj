@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\SampleJobmanMethods\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\JobMan.Storage.PostgreSql\JobMan.Storage.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\JobMan.Storage.SqlServer\JobMan.Storage.SqlServer.csproj" />
+    <ProjectReference Include="..\..\JobMan.AspNetCore.Ui\JobMan.AspNetCore.Ui.csproj" />
+    <ProjectReference Include="..\..\JobMan.Storage.PostgreSql\JobMan.Storage.PostgreSql.csproj" />
+    <ProjectReference Include="..\..\JobMan.Storage.SqlServer\JobMan.Storage.SqlServer.csproj" />
+    <ProjectReference Include="..\..\JobMan\JobMan.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,69 @@
+﻿@{
+}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="mb-2 align-items-center">
+                <div class="card-body">
+                    <div class="row mt-1 align-items-center">
+                        <div class="col-3 col-lg-1 text-center py-4">
+                            <p class="mb-1 small text-muted">Server</p>
+                            <span id="dispServerCount" class="h3">0</span>
+                            <span class="fe fe-server text-success fe-12"></span>
+                        </div>
+                        <div class="col-3 col-lg-1 text-center py-4">
+                            <p class="mb-1 small text-muted">Pool</p>
+                            <span id="dispPoolCount" class="h3">0</span>
+                            <span class="fe fe-layers text-success fe-12"></span>
+                        </div>
+                        <div class="col-6 col-lg-2 text-center py-4">
+                            <p class="mb-1 small text-muted">Worker</p>
+                            <span id="dispWorkerCount" class="h3">0</span>
+                            <span class="fe fe-cpu text-success fe-12"></span>
+                        </div>
+                        <div class="col-6 col-lg-2 text-center py-4">
+                            <p class="mb-1 small text-muted">Waiting Job</p>
+                            <span id="dispWaitingJobCount" class="h6">0</span>
+                            <span class="fe fe-database text-success fe-12"></span>
+                        </div>
+                        <div class="col-6 col-lg-2 text-center py-4">
+                            <p class="mb-1 small text-muted">Buffered Job</p>
+                            <span id="inBufferJobCount" class="h6">0</span>
+                            <span class="fe fe-activity text-success fe-12"></span>
+                        </div>
+                        <div class="col-6 col-lg-2 text-center py-4">
+                            <p class="mb-1 small text-muted">Completed Job</p>
+                            <span id="dispCompletedJobCount" class="h6">0</span>
+                            <span class="fe fe-check text-success fe-12"></span>
+                        </div>
+                        <div class="col-6 col-lg-2 text-center py-4">
+                            <p class="mb-1 small text-muted">Error</p>
+                            <span id="dispFailedJobCount" class="h6">0</span>
+                            <span class="fe fe-alert-triangle text-danger fe-12"></span>
+                        </div>
+                    </div>
+                    <div class="map-box" style="position: relative;">
+                        <canvas id="workGraphChart" style="min-height: 365px;">
+                            
+                        </canvas>
+                        <div class="resize-triggers"><div class="expand-trigger"><div style="width: 1179px; height: 366px;"></div></div><div class="contract-trigger"></div></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        window.dashboardServerDataProvider = new DashboardServerDataProvider();
+
+
+    });
+
+</script>
