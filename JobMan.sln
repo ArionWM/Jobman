@@ -29,8 +29,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		_documentation\Contribution.md = _documentation\Contribution.md
-		_documentation\License.md = _documentation\License.md
 		_documentation\HowToUse.md = _documentation\HowToUse.md
+		_documentation\License.md = _documentation\License.md
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -42,6 +42,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{B9E66217
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{E1697424-AE81-4F9A-83B6-67B9442B1287}"
+	ProjectSection(SolutionItems) = preProject
+		_documentation\img\Architecture.png = _documentation\img\Architecture.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

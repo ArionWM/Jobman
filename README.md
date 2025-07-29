@@ -53,14 +53,14 @@ Jobman is designed around the concepts of ThreadPool (named WorkPool), allowing 
 
 Each WorkPool have multiple threads and can be configured with different priorities and storages.
 
-![Architecture](/img/Architecture.png)
+![Architecture](https://github.com/ArionWM/Jobman/blob/main/_documentation/img/Architecture.png)
 
 
 ## Links
 
-- [How to Use](/HowToUse.md)
-- [Contribution](/Contribution.md)
-- [License](/license.md)
+- [How to Use](https://github.com/ArionWM/Jobman/blob/main/_documentation/HowToUse.md)
+- [Contribution](https://github.com/ArionWM/Jobman/blob/main/_documentation/Contribution.md)
+- [License](https://github.com/ArionWM/Jobman/blob/main/_documentation/license.md)
 
 
 
