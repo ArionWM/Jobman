@@ -2,10 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 	<metadata>
 		<id>JobMan.Storage.SqlServer</id>
-		<version>0.1.0</version>
+		<version>0.1.0-alpha</version>
 		<title>JobMan SqlServer Connection</title>
 		<authors>ArionWm (Türkay Kaynak)</authors>
 		<owners>ArionWm (Türkay Kaynak)</owners>
+		<projectUrl>https://github.com/ArionWM/Jobman</projectUrl>
+		<repository type="git" url="https://github.com/ArionWM/Jobman.git" />
 		<description>
 			Jobman is "high performance", scalable, persistable, embedded producer-consumer (background processing) job server for .NET.
 		</description>
@@ -14,8 +16,11 @@
 		</releaseNotes>
 		<copyright>Copyright 2025 ArionWm</copyright>
 		<tags>Job Server Background Processing Recurring Jobs Thread Pool</tags>
-		<dependencies>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<readme>docs\README.md</readme>
+		<license type="file">License.txt</license>
 
+		<dependencies>
 			<group targetFramework="netstandard2.1">
 				<dependency id="JobMan" version="0.3.3" />
 				<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="7.0.0" />
@@ -30,5 +35,8 @@
 	<files>
 		<file src="../JobMan.Storage.SqlServer/bin/Debug/netstandard2.1/JobMan.Storage.SqlServer.dll" target="lib\netstandard2.1\JobMan.Storage.SqlServer.dll" />
 		<file src="../JobMan.Storage.SqlServer/bin/Debug/netstandard2.1/JobMan.Storage.SqlServer.pdb" target="lib\netstandard2.1\JobMan.Storage.SqlServer.pdb" />
+		<file src="./Contents/ReadMe.md" target="docs\README.md" />
+		<file src="./Contents\License.txt" target="" />
+
 	</files>
 </package>

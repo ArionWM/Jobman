@@ -2,10 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 	<metadata>
 		<id>JobMan</id>
-		<version>0.3.3</version>
+		<version>0.3.4-alpha</version>
 		<title>JobMan</title>
 		<authors>ArionWm (Türkay Kaynak)</authors>
-		<owners>JobmanWS, ArionWm</owners>
+		<owners>ArionWm (Türkay Kaynak)</owners>
+		<projectUrl>https://github.com/ArionWM/Jobman</projectUrl>
+		<repository type="git" url="https://github.com/ArionWM/Jobman.git" />
 		<description>
 			Jobman is "high performance", scalable, persistable, embedded producer-consumer (background processing) job server for .NET.
 		</description>
@@ -16,6 +18,7 @@
 		<tags>Job Server Background Processing Recurring Jobs Thread Pool</tags>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<readme>docs\README.md</readme>
+		<license type="file">License.txt</license>
 		<dependencies>
 			<group targetFramework="netstandard2.1">
 				<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="7.0.0" />
@@ -31,6 +34,7 @@
 		<file src="../JobMan.AspNetCore.Ui/bin/x64/Debug/JobMan.Abstractions.pdb" target="lib\netstandard2.1\JobMan.Abstractions.pdb" />
 		<file src="../JobMan.AspNetCore.Ui/bin/x64/Debug/JobMan.dll" target="lib\netstandard2.1\JobMan.dll" />
 		<file src="../JobMan.AspNetCore.Ui/bin/x64/Debug/JobMan.pdb" target="lib\netstandard2.1\JobMan.pdb" />
-		<file src="../_documentation/Nuget/ReadMe.md" target="docs\README.md" />
+		<file src="./Contents/ReadMe.md" target="docs\README.md" />
+		<file src="./Contents\License.txt" target="" />
 	</files>
 </package>

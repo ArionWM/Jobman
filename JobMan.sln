@@ -36,14 +36,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMan.Sample01", "_samples\JobMan.Sample01\JobMan.Sample01.csproj", "{C2D2F83B-C63B-F6E2-4996-C9299CE6E625}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{B9E66217-72A6-4C35-B00D-CA653FC3D76E}"
-	ProjectSection(SolutionItems) = preProject
-		_documentation\Nuget\ReadMe.md = _documentation\Nuget\ReadMe.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{E1697424-AE81-4F9A-83B6-67B9442B1287}"
 	ProjectSection(SolutionItems) = preProject
 		_documentation\img\Architecture.png = _documentation\img\Architecture.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{043C2B06-0016-4A7F-A388-FBBE7B9E7A32}"
+	ProjectSection(SolutionItems) = preProject
+		_nuget\Contents\License.txt = _nuget\Contents\License.txt
+		_nuget\Contents\ReadMe.md = _nuget\Contents\ReadMe.md
 	EndProjectSection
 EndProject
 Global
@@ -146,8 +147,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C2D2F83B-C63B-F6E2-4996-C9299CE6E625} = {BBFD2FDC-773F-461A-8E2D-ABD9E78E2F28}
-		{B9E66217-72A6-4C35-B00D-CA653FC3D76E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{E1697424-AE81-4F9A-83B6-67B9442B1287} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{043C2B06-0016-4A7F-A388-FBBE7B9E7A32} = {62A98A98-C621-4218-8BDA-9DDF18480A21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {033F9B6E-26AC-45E6-A8A9-94980115BEB9}

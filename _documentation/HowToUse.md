@@ -28,7 +28,11 @@ Microsoft Dependency Injection
    ```
    dotnet add package Jobman.Storage.PostgreSQL
    ```
-   
+
+3. Install the Jobman UI package (optional):
+   ```
+   dotnet add package Jobman.UI
+   ```
 
 ## Sample Configuration
 
@@ -163,7 +167,7 @@ class MyClass
     }
 }
 
-JobManGlobals.Server.Enqueue("MyReleatedPool", () => MyClass.MyJob1("Hello", 1234));
+JobManGlobals.Server.Enqueue("Default", () => MyClass.MyJob1("Hello", 1234));
 
 ```
 
@@ -193,7 +197,7 @@ class MyClass
     }
 }
 
-JobManGlobals.Server.Enqueue("MyReleatedPool", () => MyClass.MyJob1("Hello", 1234), TimeSpan.FromMinutes(5));
+JobManGlobals.Server.Enqueue("Default", () => MyClass.MyJob1("Hello", 1234), TimeSpan.FromMinutes(5));
 
 ```
 
@@ -214,20 +218,23 @@ class MyClass
 }
 
 // Schedule a job to run daily at 1 AM (every day)
-JobManGlobals.Server.Schedule("MyReleatedPool", () => MyClass.MyJob1("Hello", 1234), "0 1 * * *");
+JobManGlobals.Server.Schedule("Default", () => MyClass.MyJob1("Hello", 1234), "0 1 * * *");
 
 ```
 
 
 ## Access to UI
 
-abc
+To access the Jobman UI, navigate to the following URL in your web browser:
+
+\<YourApplicationRoot>**/jobman**
+
 
 ## Persistence and Direct Invoke
 
 Enqueue jobs can be persisted in the storage, allowing them to be executed even after application restarts.
 
-If workpool preprocess buffer is have empty slot, the job will be executed immediately.
+If workpool preprocess buffer is have empty slot, the job will be executed immediately. If not, it will be persisted and executed later when resources (Workpool buffer) are available.
 
 
 ## Tips & Suggestions
@@ -238,7 +245,7 @@ When defining jobs, use simple types for parameters to performance and compatibi
 
 ### Use Different Work Pools With Priorities
 
-abc
+Jobs begin processing when there are free workers in the pool. It is recommended that low-priority jobs be run in another WorkPool to avoid blocking important ones.
 
 ### Place long-running jobs in separate pools
 
