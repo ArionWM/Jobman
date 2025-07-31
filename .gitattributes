@@ -1,0 +1,3 @@
+Jobman.UI.AspNetCore/wwwroot/* linguist-vendored
+_nuget/* linguist-generated
+_documentation/* linguist-documentation
