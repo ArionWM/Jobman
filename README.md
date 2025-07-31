@@ -54,13 +54,20 @@ Each WorkPool have multiple threads and can be configured with different priorit
 
 ![Architecture](https://github.com/ArionWM/Jobman/blob/main/_documentation/img/Architecture.png)
 
-
 ## Links
 
 - [How to Use](https://github.com/ArionWM/Jobman/blob/main/_documentation/HowToUse.md)
 - [Contribution](https://github.com/ArionWM/Jobman/blob/main/_documentation/Contribution.md)
 - [License](https://github.com/ArionWM/Jobman/blob/main/_documentation/license.md)
 
+## Packages (nuget)
+
+| Package | Version |
+|---|---|
+|[JobMan](https://www.nuget.org/packages/JobMan/)|![JobMan](https://img.shields.io/nuget/v/JobMan)|
+|[Jobman.UI.AspNetCore](https://www.nuget.org/packages/Jobman.UI.AspNetCore)|![Jobman.UI.AspNetCore](https://img.shields.io/nuget/v/Jobman.UI.AspNetCore)|
+|[JobMan.Storage.PostgreSql](https://www.nuget.org/packages/JobMan.Storage.PostgreSql)|![JobMan.Storage.PostgreSql](https://img.shields.io/nuget/v/JobMan.Storage.PostgreSql)|
+|[JobMan.Storage.SqlServer](https://www.nuget.org/packages/JobMan.Storage.SqlServer)|![JobMan.Storage.SqlServer](https://img.shields.io/nuget/v/JobMan.Storage.SqlServer)|
 
 
 ## Other Alternatives / Related Infrastructures
