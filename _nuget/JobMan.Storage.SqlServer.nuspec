@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 	<metadata>
 		<id>JobMan.Storage.SqlServer</id>
-		<version>0.4.1</version>
+		<version>0.4.2</version>
 		<title>JobMan SqlServer Connection</title>
 		<authors>ArionWm (Türkay Kaynak)</authors>
 		<owners>ArionWm (Türkay Kaynak)</owners>
@@ -22,7 +22,7 @@
 
 		<dependencies>
 			<group targetFramework="netstandard2.1">
-				<dependency id="JobMan" version="0.4.1" />
+				<dependency id="JobMan" version="0.4.2" />
 				<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="7.0.0" />
 				<dependency id="Microsoft.Extensions.Logging" version="7.0.0" />
 				<dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.0" />

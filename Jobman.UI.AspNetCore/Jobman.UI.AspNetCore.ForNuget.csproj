@@ -33,7 +33,7 @@
 		<PackageTags>Job Server Background Processing Recurring Jobs Thread Pool</PackageTags>
 		<PackageReleaseNotes>This is early release. But working in some applications and many customers ...</PackageReleaseNotes>
 		<PackageOutputPath>..\_nuget\_output</PackageOutputPath>
-		<VersionPrefix>0.4.1</VersionPrefix>
+		<VersionPrefix>0.4.2</VersionPrefix>
 		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 		<FileVersion>$(VersionPrefix)</FileVersion>
 		<PackageLicenseFile>License.txt</PackageLicenseFile>
@@ -62,7 +62,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Jobman" Version="0.4.1" />
+		<PackageReference Include="Jobman" Version="0.4.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Components" Version="7.0.18" />
 		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
 	</ItemGroup>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 	<metadata>
 		<id>Jobman.UI.AspNetCore</id>
-		<version>0.4.1-alpha</version>
+		<version>0.4.2-alpha</version>
 		<title>JobMan UI Library for AspNetCore</title>
 		<authors>ArionWm (Türkay Kaynak)</authors>
 		<owners>ArionWm (Türkay Kaynak)</owners>
@@ -22,7 +22,7 @@
 
 		<dependencies>
 			<group targetFramework="net7.0">
-				<dependency id="JobMan" version="0.4.1" />
+				<dependency id="JobMan" version="0.4.2" />
 				<dependency id="Microsoft.AspNetCore.Components" version="7.0.18"  />
 				<dependency id="Microsoft.AspNetCore.Components.Web" version="7.0.0"  />
 			</group>

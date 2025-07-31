@@ -18,5 +18,5 @@ using System.Runtime.CompilerServices;
 public static class JobManAssembly
 {
     //TODO: TypeHelper
-    public const string VERSION = "0.4.1.00015";
+    public const string VERSION = "0.4.2.00015";
 }
