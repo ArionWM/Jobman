@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+	<PropertyGroup Label="Globals">
+		<SccProjectName>SAK</SccProjectName>
+		<SccProvider>SAK</SccProvider>
+		<SccAuxPath>SAK</SccAuxPath>
+		<SccLocalPath>SAK</SccLocalPath>
+		<Platforms>x64</Platforms>
+		<NoWarn>1701;1702;1591;1572;1573;CS8600;CS8601;CS8602;CS8603;CS8604;CS8618;CS8625</NoWarn>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<AssemblyName>Jobman.UI.AspNetCore</AssemblyName>
+		<RootNamespace>Jobman.UI.AspNetCore</RootNamespace>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Version></Version>
+		<Title>JobMan UI Library for AspNetCore</Title>
+		<Authors>ArionWm (Türkay Kaynak)</Authors>
+		<Description>Jobman is "high performance", scalable, persistable, embedded producer-consumer (background processing) job server for .NET.</Description>
+		<Copyright>Copyright 2025 ArionWm</Copyright>
+		<PackageProjectUrl>https://github.com/ArionWM/Jobman</PackageProjectUrl>
+		<PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/ArionWM/Jobman.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Job Server Background Processing Recurring Jobs Thread Pool</PackageTags>
+		<PackageReleaseNotes>This is early release. But working in some applications and many customers ...</PackageReleaseNotes>
+		<PackageOutputPath>..\_nuget\_output</PackageOutputPath>
+		<VersionPrefix>0.4.1</VersionPrefix>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+		<PackageLicenseFile>License.txt</PackageLicenseFile>
+
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<Optimize>False</Optimize>
+		<DebugType>full</DebugType>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<Optimize>True</Optimize>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Jobman" Version="0.4.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="7.0.18" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Include="..\JobManGlobalAssemblyInfo.cs" Link="JobManGlobalAssemblyInfo.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\_nuget\Contents\License.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\_nuget\Contents\ReadMe.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>

@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JobMan.AspNetCore.Ui;
+namespace Jobman.UI.AspNetCore;
 
 public static class ServiceExtensions
 {
-    public static void AddJobManUi(this IServiceCollection services)
-    {
-        //Nothing yet ..
-    }
+    //public static void AddJobManUi(this IServiceCollection services)
+    //{
+    //    //Nothing yet ..
+    //}
 
 
     //IApplicationBuilder + IEndpointRouteBuilder ?

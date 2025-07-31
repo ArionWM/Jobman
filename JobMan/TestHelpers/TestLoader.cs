@@ -2,37 +2,36 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace JobMan.TestHelpers
+namespace JobMan.TestHelpers;
+
+public class TestLoader
 {
-    internal class TestLoader
+    static Random _random;
+
+    static TestLoader()
     {
-        static Random _random;
+        if (_random == null)
+            _random = new Random(DateTime.Now.Millisecond);
+    }
 
-        static TestLoader()
+    public static void TestJob(int durationMs)
+    {
+        //if (_random.Next(100) % 20 == 0) //%4 possibility
+        //    throw new Exception("Test exception");
+
+        Thread.Sleep(durationMs);
+    }
+
+    public async void CreateLoad(int count, int maxDurationMs)
+    {
+        string[] poolNames = JobManGlobals.Server.Pools.Select(pool => pool.Name).ToArray();
+
+        for (int i = 0; i < count; i++)
         {
-            if (_random == null)
-                _random = new Random(DateTime.Now.Millisecond);
+            string poolName = poolNames[_random.Next(poolNames.Length)];
+            JobManGlobals.Server.Enqueue(poolName, () => TestJob(_random.Next(2, maxDurationMs)));
         }
 
-        public static void TestJob(int durationMs)
-        {
-            //if (_random.Next(100) % 20 == 0) //%4 possibility
-            //    throw new Exception("Test exception");
-
-            Thread.Sleep(durationMs);
-        }
-
-        public async void CreateLoad(int count, int maxDurationMs)
-        {
-            string[] poolNames = JobManGlobals.Server.Pools.Select(pool => pool.Name).ToArray();
-
-            for (int i = 0; i < count; i++)
-            {
-                string poolName = poolNames[_random.Next(poolNames.Length)];
-                JobManGlobals.Server.Enqueue(poolName, () => TestJob(_random.Next(2, maxDurationMs)));
-            }
-
-            await Task.CompletedTask;
-        }
+        await Task.CompletedTask;
     }
 }

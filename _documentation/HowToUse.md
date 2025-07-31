@@ -31,7 +31,7 @@ Microsoft Dependency Injection
 
 3. Install the Jobman UI package (optional):
    ```
-   dotnet add package Jobman.UI
+   dotnet add package Jobman.UI.AspNetCore
    ```
 
 ## Sample Configuration
@@ -91,12 +91,17 @@ To add the Jobman UI, you need to install the Jobman.UI package and configure it
 Jobman UI is added under *Jobman* area ..
 
 ```csharp
+var builder = WebApplication.CreateBuilder(args);
+//or 
+var builder = Host.CreateDefaultBuilder(args)
+
+...
 
 var app = builder.Build();
 
 ...
 
-app.UseJobManUi(); // Add JobMan UI for application ('/jobman')'
+app.UseJobManUi(); // <-- Add JobMan UI for application ('/jobman')'
 
 ...
 

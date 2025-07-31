@@ -6,7 +6,11 @@
 		<SccAuxPath>SAK</SccAuxPath>
 		<SccLocalPath>SAK</SccLocalPath>
 		<Platforms>x64</Platforms>
-		<Configurations>Debug;Release;Development</Configurations>
+		<Configurations>Debug;Release</Configurations>
+		<VersionPrefix>0.4.1</VersionPrefix>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		<FileVersion>$(VersionPrefix)</FileVersion>
+
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -25,13 +29,6 @@
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 		
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
-	  <Optimize>False</Optimize>
-	  <DebugType>full</DebugType>
-	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -58,11 +55,6 @@
 
 
 	<ItemGroup>
-	  <ProjectReference Include="..\JobMan.Abstractions\JobMan.Abstractions.csproj" />
-	</ItemGroup>
-
-
-	<ItemGroup>
 	  <Compile Update="Properties\Resources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -82,5 +74,10 @@
 	<ItemGroup>
 	  <Folder Include="Storage\PostgreSql\" />
 	  <Folder Include="Storage\SqlServer\" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <ProjectReference Include="..\JobMan.Abstractions\JobMan.Abstractions.csproj" />
 	</ItemGroup>
 </Project>

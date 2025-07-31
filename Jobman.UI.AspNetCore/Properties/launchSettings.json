@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "JobMan.AspNetCore.Ui": {
+    "Jobman.UI.AspNetCore": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

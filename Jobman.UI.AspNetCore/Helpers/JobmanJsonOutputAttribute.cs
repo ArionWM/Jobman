@@ -7,7 +7,7 @@
 //using System.Text.Json;
 //using System.Threading.Tasks;
 
-//namespace JobMan.AspNetCore.Ui.Helpers
+//namespace Jobman.UI.AspNetCore.Helpers
 //{
 //    public class JobmanJsonOutputAttribute : ActionFilterAttribute
 //    {

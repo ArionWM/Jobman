@@ -47,6 +47,6 @@ Core objective is to provide a codebase that prioritizes performance and simplic
 ## Packages (nuget)
 
 - [Jobman](https://www.nuget.org/packages/Jobman/) - Main package
-- [Jobman.UI](https://www.nuget.org/packages/Jobman.UI/) - UI package
+- [Jobman.UI.AspNetCore](https://www.nuget.org/packages/Jobman.Ui.AspNetCore/) - UI package
 - [JobMan.Storage.SqlServer](https://www.nuget.org/packages/JobMan.Storage.SqlServer/) - SQL Server storage package
 - [JobMan.Storage.PostgreSql](https://www.nuget.org/packages/JobMan.Storage.PostgreSql/) - PostgreSQL storage package

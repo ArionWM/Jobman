@@ -1,5 +1,5 @@
 using JobMan;
-using JobMan.AspNetCore.Ui;
+using Jobman.UI.AspNetCore;
 using JobMan.Storage.MemoryStorage;
 using Serilog;
 
@@ -82,11 +82,12 @@ namespace JobMan.Sample01
             });
 
 
+            builder.Services.AddRazorPages();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddJobManUi(); // Add JobMan UI for services
+            //builder.Services.AddJobManUi(); // Add JobMan UI for services
 
             var app = builder.Build();
 
@@ -101,6 +102,7 @@ namespace JobMan.Sample01
 
             app.UseAuthorization();
 
+            
             app.UseJobManUi(); // Add JobMan UI for application ('/jobman')'
 
             app.MapControllerRoute(

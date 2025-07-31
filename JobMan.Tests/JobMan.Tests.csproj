@@ -9,7 +9,7 @@
 		<NoWarn>1701;1702;1591;1572;1573;CS8600;CS8601;CS8602;CS8603;CS8604;CS8618;CS8625</NoWarn>
 		<Platforms>x64</Platforms>
 		<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
-		<Configurations>Debug;Release;Development</Configurations>
+		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>
 
 
@@ -35,7 +35,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\JobMan.AspNetCore.Ui\JobMan.AspNetCore.Ui.csproj" />
+		<ProjectReference Include="..\JobMan.Abstractions\JobMan.Abstractions.csproj" />
+		<ProjectReference Include="..\Jobman.UI.AspNetCore\Jobman.UI.AspNetCore.csproj" />
 		<ProjectReference Include="..\JobMan.Storage.PostgreSql\JobMan.Storage.PostgreSql.csproj" />
 		<ProjectReference Include="..\JobMan.Storage.SqlServer\JobMan.Storage.SqlServer.csproj" />
 		<ProjectReference Include="..\JobMan\JobMan.csproj" />
